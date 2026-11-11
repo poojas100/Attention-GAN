@@ -1,0 +1,22 @@
+# Large dataset and embedding files
+*.pickle
+*.pkl
+
+# CUB dataset
+birds_implementation/CUB_200_2011/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+
+# Model checkpoints
+*.pth
+*.pt
+*.ckpt
+
+# Secrets
+.env

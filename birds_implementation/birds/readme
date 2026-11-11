@@ -1,0 +1,30 @@
+Prepare the Caltech-UCSD birds (CUB) dataset for reproducing main results in the paper,
+@article{han2016stackgan,
+  title={StackGAN: Text to Photo-realistic Image Synthesis with Stacked Generative Adversarial Networks},
+  author={Han Zhang and Tao Xu and Hongsheng Li and Shaoting Zhang and Xiaolei Huang and Xiaogang Wang and Dimitris Metaxas},
+  journal={arXiv:1612.03242},
+  year={2016}
+}
+
+
+1. Save this preprocessed data to Data/.
+The text description data and char-CNN-RNN text embeddings are downloaded from
+https://github.com/reedscot/cvpr2016.
+Also, we follow this paper to split the dataset into train and test subsets.
+@inproceedings{reed2016learning,
+ title = {Learning Deep Representations of Fine-Grained Visual Descriptions,
+ booktitle = {IEEE Computer Vision and Pattern Recognition},
+ year = {2016},
+ author = {Scott Reed and Zeynep Akata and Bernt Schiele and Honglak Lee},
+}
+
+
+2 Download the image data from http://www.vision.caltech.edu/visipedia/CUB-200-2011.html;
+Unzip it to Data/birds/CUB_200_2011/ and run "python ./misc/preprocess_birds.py".
+@techreport{WahCUB_200_2011,
+	Title = {{The Caltech-UCSD Birds-200-2011 Dataset}},
+	Author = {Wah, C. and Branson, S. and Welinder, P. and Perona, P. and Belongie, S.},
+	Year = {2011}
+	Institution = {California Institute of Technology},
+	Number = {CNS-TR-2011-001}
+}
